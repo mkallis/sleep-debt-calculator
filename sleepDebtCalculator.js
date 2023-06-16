@@ -30,4 +30,13 @@ const getSleepHours = day => {
     }
 }
 
-console.log(getSleepHours('monday'));
+// Returns the amount of hours actually slept
+const getActualSleepHours = () => getSleepHours('monday') +
+        getSleepHours('tuesday') +
+        getSleepHours('wednesday') +
+        getSleepHours('thursday') +
+        getSleepHours('friday') +
+        getSleepHours('saturday') +
+        getSleepHours('sunday');
+
+console.log(getActualSleepHours());
