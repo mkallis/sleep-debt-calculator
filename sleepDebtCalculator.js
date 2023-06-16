@@ -57,9 +57,9 @@ const calculateSleepDebt = () => {
     if (actualSleepHours === idealSleepHours) {
         return "You got the perfect amount of sleep!";
     } else if (actualSleepHours < idealSleepHours) {
-        return 'You could use a little more sleep. Take some rest.';
+        return `You could use a little more sleep. Your sleep deficit was ${idealSleepHours - actualSleepHours} hours.`;
     } else if (actualSleepHours > idealSleepHours) {
-        return 'You got more sleep than needed!';
+        return `You got ${actualSleepHours - idealSleepHours} hours more sleep than needed!`;
     }
 }
 
