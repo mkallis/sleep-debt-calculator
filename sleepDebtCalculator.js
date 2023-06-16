@@ -20,10 +20,10 @@ const getSleepHours = day => {
             return 5;
             break;
         case 'saturday':
-            return '8';
+            return 8;
             break;
         case 'sunday':
-            return '9';
+            return 9;
             break;
         default:
             break;
